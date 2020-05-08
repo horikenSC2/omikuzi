@@ -1,0 +1,103 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+#btn{
+  width:200px;
+  height:200px;
+  background-color:rgb(117, 159, 238);
+  margin:30px auto;
+  border-radius:50%;
+  line-height:200px;
+  text-align:center;
+  font-size:40px;
+  color:white;
+  font-weight:bold;
+  cursor: pointer;
+  user-select:none;
+  box-shadow:0 10px rgb(45, 62, 95);
+}
+
+#title{
+  margin:30px auto;
+  text-align:center;
+  font-size:70px;
+  font-weight:bold;
+}
+
+#select-area{
+  margin:30px auto;
+  width:500px;
+  text-align:center;
+}
+
+#select-area h2{
+  padding-bottom:10px;
+}
+
+select{
+  font-size:30px;
+}
+
+#modal-wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display:none;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#omikuzi-wrapper{
+  position: absolute;
+  top:  0;                    /* 上からの位置指定 */
+  bottom:  0;                 /* 下からの位置指定 */
+  left:  0;                   /* 左からの位置指定 */
+  right:  0;                  /* 右からの位置指定 */
+  margin:  auto;              /* 位置調整と組み合わせて上下中央に */
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+  text-align: center;
+}
+
+#main-result{
+  text-align:center;
+  font-size:100px;
+  font-weight:bold;
+}
+
+#btn:active{
+  position:relative;
+  top:10px;
+  box-shadow:none;
+}
+
+.sub-result{
+  margin:0 auto;
+  text-align:center;
+}
+
+.subcontents{
+  width:500px;
+  margin:20px auto;
+}
+
+.subcontents{
+  font-size:20px;
+  font-weight:bold;
+}

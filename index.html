@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+  <meta charset="utf-8">
+  <title>おみくじ</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <div id="title">スタクラおみくじ</div>
+  <div id="select-area">
+    <h2>今日のラダー運を占っちゃおう！<br>あなたの種族を選んで「引く」を押してね</h2>
+    <select>
+      <option>テラン</option>
+      <option>プロトス</option>
+      <option>ザーグ</option>
+    </select>
+  </div>
+  <div id="btn">引く</div>
+  <div id="modal-wrapper" class="hidden">
+    <div id="omikuzi-wrapper">
+      <div>
+        <i class="fa fa-3x fa-times" id="close-modal"></i>
+      </div>
+      <div id="main-result"></div>
+      <div class="sub-result">
+        <div class="subcontents">
+          <h2>全般</h2>
+          <p id="general"></p>
+        </div>
+        <div class="subcontents">
+          <h2>vs Terran</h2>
+          <p id="vt"></p>
+        </div>
+        <div class="subcontents">
+          <h2>vs Protoss</h2>
+          <p id="vp"></p>
+        </div>
+        <div class="subcontents">
+          <h2>vs Zerg</h2>
+          <p id="vz"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
